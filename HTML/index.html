@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Forêt de Brocéliande</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="../CSS/default.css"/>
+  
+</head>
+<body>
+
+  <header>
+    <h1>Présentation de la Forêt de Brocéliande</h1>
+  </header>
+  <nav>
+    <ul>
+        <li><a href="index.html">Présentation de la forêt de Brocéliande</a></li>
+        <li><a href="bestiaires.html">Bestiaire</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Carte interactive -->
+    <div id="map"></div>
+
+    <div class="liens">
+        <a href="Foret/dolmen_oublies.html">Les Dolmens Oubliés</a>
+        <a href="Foret/tenval_avelek.html">Les Grottes de Tenval et d’Avelek</a>
+        <a href="Foret/chene_sombre.html">Le Chêne Sombre</a>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>Présentation Brocéliande</p>
+  </footer>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script>
+    const map = L.map('map').setView([48.0084, -2.1833], 13); // Coordonnées approximatives de Brocéliande
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+
+    // 🔹 Marqueur pour les Grottes de Tenval et d’Avelek (coordonnées fictives proches)
+    const paimpont = L.marker([48.0180, -2.1720]).addTo(map);
+    paimpont.bindPopup(`
+    <b>Paimpont</b><br>
+    <a href="tenval_avelek.html">Voir la description</a>
+    `);
+
+    L.marker([47.9299, -2.3969]).addTo(map)
+    .bindPopup(`
+    <b>Ploërmel</b><br>
+    <a href="https://fr.wikipedia.org/wiki/Plo%C3%ABrmel">Voir la description (Wikipédia)</a>
+    `);
+
+
+  </script>
+
+</body>
+</html>
