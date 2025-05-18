@@ -1,0 +1,73 @@
+body {
+  background-color: #1c1c1c;
+  color: #e6e6e6;
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 2em;
+}
+
+h1 {
+  color: #d4af37;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+
+.description {
+  margin-bottom: 2em;
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.fiche-technique {
+  background-color: #2b2b2b;
+  border-left: 5px solid #d4af37;
+  padding: 1.5em;
+  border-radius: 8px;
+  color:white;
+}
+
+.fiche-technique h2 {
+  color: #c9b96e;
+  margin-top: 0;
+}
+
+.fiche-technique ul {
+  list-style: none;
+  padding: 0;
+}
+
+.fiche-technique li {
+  margin-bottom: 0.5em;
+}
+
+.fiche-technique strong {
+  color: #9dd3a8;
+}
+
+img{
+    width:40%;
+    height:40%;
+}
+a{
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
