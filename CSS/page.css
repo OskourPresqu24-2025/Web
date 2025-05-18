@@ -71,3 +71,9 @@ a{
   color: white;
   font-weight: bold;
 }
+.retour{
+  display: flex;
+  justify-content: center;
+  margin:2%;
+  padding-bottom: 3%;
+}
