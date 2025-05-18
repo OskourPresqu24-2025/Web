@@ -16,6 +16,9 @@ header h1 {
   margin: 0;
   color: #d4af37;
 }
+header a{
+  color:white;
+}
 header p {
   font-style: italic;
   font-size: 1.2em;
@@ -58,4 +61,39 @@ footer {
 }
 .allMob{
   margin-left:10%;
+}
+img {
+  max-width: 100%;
+  margin: 1rem 0;
+  border: 1px solid #ccc;
+}
+em {
+  font-style: italic;
+}
+
+.image{
+  display: flex;
+  justify-content: center;
+}
+
+.retour{
+  display: flex;
+  justify-content: center;
+}
+ul li{
+  display: inline;
+  list-style: none;
+  margin: auto;
+}
+ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+#map {
+  height: 500px;
+  width: 100%;
+}
+a{
+  font-weight: bold;
 }
